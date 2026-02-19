@@ -19,6 +19,9 @@ A React app that fetches real country data from the REST Countries API.
 - https://restcountries.com/v3.1/region/{region}
 
 ## How to Run
+- npm run dev
 
 ```bash
 npm install
+
+
