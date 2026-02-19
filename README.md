@@ -22,4 +22,3 @@ A React app that fetches real country data from the REST Countries API.
 
 ```bash
 npm install
-npm start
