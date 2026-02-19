@@ -18,6 +18,15 @@ A React app that fetches real country data from the REST Countries API.
 - https://restcountries.com/v3.1/name/{name}
 - https://restcountries.com/v3.1/region/{region}
 
+## screenshots🎬📸 (home + results)
+
+- 🎬
+- [screen-capture.webm](https://github.com/user-attachments/assets/b9b4c6ae-b54b-46ec-a52b-e5f5c4fa1745)
+
+- 📸
+- <img width="1600" height="739" alt="filter" src="https://github.com/user-attachments/assets/966f3716-f437-4ea4-9798-dbbe1ffc8b2f" />
+
+
 ## How to Run
 - npm run dev
 
