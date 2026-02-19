@@ -26,7 +26,6 @@ function App() {
     } else if (region !== "all") {
       url = `https://restcountries.com/v3.1/region/${region}`;
     } else {
-      // ← فقط اینجا fields اجباریه
       url = "https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital,cca3";
     }
 
@@ -35,14 +34,12 @@ function App() {
     const response = await fetch(url);
 
     if (!response.ok) {
-      const errorText = await response.text(); // ← برای دیدن پیام دقیق API
+      const errorText = await response.text();
       console.error("API Error details:", response.status, errorText);
       throw new Error(`Failed to fetch countries (${response.status})`);
     }
 
     let data = await response.json();
-
-    // اگر single object بود (مثل بعضی جستجوها) → به آرایه تبدیل کن
     if (!Array.isArray(data)) data = [data];
 
     setCountries(
